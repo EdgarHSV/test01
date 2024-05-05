@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>"If Conditional" page (Test01)</title>
+</head>
+<body>
+   <h1>"Conditionals page: if" page (Test01)</h1>
+   <h2>Using TEMPLATES</h2>
+   <h3>ES-Test01</h3>
+   The generated numbre is: <span style="font-size: 52px;">{{iNumber}}</span>
+   {% if iNumber > 10 %}
+      <h2>It's greater than 10.</h2>
+   {% elif iNumber < 10 %}
+         <h2>It's less tha 10.</h2>
+   {% else %}
+         <h2>It's equal to 10.</h2>
+   {% endif %}
+</body>
+</html>
