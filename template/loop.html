@@ -8,16 +8,23 @@
 </head>
 
 <body>
-   <h1>"Loop page: For" page (Test01)</h1>
-   <h2>Using TEMPLATES</h2>
-   <h3>ES-Test01</h3>
+   {% extends 'index.html' %}
+   {% block bkNotInherited %}
 
-   <hr>
-   {% for anItem in ltSteps %}
-      <ul>
-         <li>{{ anItem }}</li>
-      </ul>   
-   {% endfor %}
+   <img src="" alt="">
+
+
+      <h1>"Loop page: For" page (Test01)</h1>
+      <h2>Using TEMPLATES</h2>
+      <h3>ES-Test01</h3>
+
+      <hr>
+      {% for anItem in ltSteps %}
+         <ul>
+            <li>{{ anItem }}</li>
+         </ul>   
+      {% endfor %}
+   {% endblock %}
 </body>
 
 </html>
