@@ -9,7 +9,7 @@ def fvLoopFor(request):
     ltStepsGitHubPush= ("--- From PC to WEB ---", 
                         "git status", 
                         "git add .", 
-                        "git -m commit [own message]", 
+                        "git commit -m [own message]", 
                         "git push origin main", 
                         "--- From WEB to PC ---", 
                         "git pull [url] main")
