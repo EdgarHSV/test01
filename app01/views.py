@@ -5,13 +5,17 @@ from random import randint
 
 # Create your views here.
 
+def fvLoopFor(request):
+    ltStepsGitHubPush= {"git status", "git add .","git -m commit [own message]", "git push origin main"}
+    return render(request, "loop.html", {"ltSteps": ltStepsGitHubPush})
+
 def fvConditionIf(request):
     nRandomIntNumber = randint(1,20)
     return render(request, "conditional.html", {"iNumber": nRandomIntNumber})
 
 def fvVariable(request):
     sName= "Shaman Dad"
-    return render(request, "variable.html",{"sName": sName})
+    return render(request, "variable.html", {"sName": sName})
 
 def fvInicio(request):
     return render(request, 'index.html')
