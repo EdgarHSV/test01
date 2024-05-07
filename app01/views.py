@@ -6,7 +6,13 @@ from random import randint
 # Create your views here.
 
 def fvLoopFor(request):
-    ltStepsGitHubPush= {"git status", "git add .","git -m commit [own message]", "git push origin main"}
+    ltStepsGitHubPush= ("--- From PC to WEB ---", 
+                        "git status", 
+                        "git add .", 
+                        "git -m commit [own message]", 
+                        "git push origin main", 
+                        "--- From WEB to PC ---", 
+                        "git pull [url] main")
     return render(request, "loop.html", {"ltSteps": ltStepsGitHubPush})
 
 def fvConditionIf(request):

@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>"For Loop" page (Test01)</title>
 </head>
+
 <body>
    <h1>"Loop page: For" page (Test01)</h1>
    <h2>Using TEMPLATES</h2>
    <h3>ES-Test01</h3>
+
+   <hr>
+   {% for anItem in ltSteps %}
+      <ul>
+         <li>{{ anItem }}</li>
+      </ul>   
+   {% endfor %}
 </body>
+
 </html>
