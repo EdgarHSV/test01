@@ -1,0 +1,4 @@
+ { % block bkInherited % }
+        <h2>This will not be inherited: because the block is BEFORE of the BLOCK definition.</h2>
+    { % endblock % }
+    hello
