@@ -11,19 +11,18 @@
    {% extends 'index.html' %}
    {% block bkNotInherited %}
 
-   <img src="" alt="">
+   <h1>I'm here.............................</h1>
 
+   <h1>"Loop page: For" page (Test01)</h1>
+   <h2>Using TEMPLATES</h2>
+   <h3>ES-Test01</h3>
 
-      <h1>"Loop page: For" page (Test01)</h1>
-      <h2>Using TEMPLATES</h2>
-      <h3>ES-Test01</h3>
-
-      <hr>
+   <hr>
+   <ul>
       {% for anItem in ltSteps %}
-         <ul>
-            <li>{{ anItem }}</li>
-         </ul>   
+      <li>{{ anItem }}</li>
       {% endfor %}
+   </ul>
    {% endblock %}
 </body>
 
