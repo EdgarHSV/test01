@@ -8,18 +8,15 @@
     <title>ES-Test01</title>
 </head>
 <body>
-    <h1 style="color: red;">"Main" page (Test01)</h1>
-    <h2>Learning Django</h2>
-    <h3>ES-Test01</h3>
-    <h4>Hello Shaman Dad</h4>
+    <h1 style="color: red;">Welcome: Main page / (Test01) Learning Django</h1>
     <hr>
-    <h1>Inheritance (BLOCKs)</h1>
-    <h2>This will be inherited: because this LABEL is BEFORE of a BLOCK.</h2>
+    <h3>Inheritance (BLOCKs)</h1>
+    <h4>This will be inherited: because this LABEL is BEFORE of a BLOCK.</h2>
     <hr>
     {% block bkNotInherited %}
-        <h2>This will NOT BE INHERITED: because this LABEL is within of a BLOCK. 
+        <h4>This will NOT BE INHERITED: because this LABEL is within of a BLOCK. 
             <span style="font-size: small;">The block start is before of this label.</span>
-        </h2>
+        </h4>
     {% endblock %} 
 </body>
 </html>
