@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%mda7z8v0l%$woi!j&pre2xbnwmjxq_^w3j2_jf26$au$8)bp2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','now.sh','vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','.now.sh','.vercel.app']
 
 
 # Application definition
@@ -81,10 +81,10 @@ WSGI_APPLICATION = '_test01_core.wsgi.app'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
 }
 
 
@@ -123,7 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static/"),)
+STATICFILES_DIRS = os.path.join(BASE_DIR, "static/"),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 # Default primary key field type
